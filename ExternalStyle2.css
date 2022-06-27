@@ -4,9 +4,7 @@ A:visited, A:active {color: green} */
 A:hover {text-decoration: overline; color: teal}
 	
 
-nav  {
-  
-}
+
 Body {
 	background-color: white;
 	font-family: cambria;
@@ -14,7 +12,7 @@ Body {
 	}
 
 H1 {font-size: 50pt; text-align: right}
-H2 {font-size: 25pt; text-align: right}
+H2 {font-size: 25pt; text-align: center}
 H3 {font-size: 10pt; text-align: center}
 H4 {text-align: center}
 H5 {font-size: 15pt}
@@ -36,3 +34,50 @@ Form {
 	color: white; 
 	background-color: green}
 
+@media screen and (max-width:480px ) {
+  center img {
+    width: 20%;
+  }
+  nav a{
+    font-size: .5rem;
+  }
+
+  .rev {
+    size: .5rem;
+  }
+  .rev form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .rev form > * {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  EM {
+    width: 50%;
+  }
+
+  EM h1 {
+    font-size: 15pt;
+    display: block;
+    align-items: center;
+  }
+
+  EM img {
+    display: none;
+  }
+
+  
+  EM > * {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
