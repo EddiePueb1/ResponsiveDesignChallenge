@@ -4,9 +4,18 @@ A:visited, A:active {color: green} */
 A:hover {text-decoration: overline; color: teal}
 	
 
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  margin: 10px;
+}
+
 
 Body {
-	background-color: white;
+	background-color: #E4E3E3;
 	font-family: cambria;
 	color: gray	
 	}
@@ -77,6 +86,47 @@ Form {
     width: 50px;
     display: flex;
     justify-content: center;
+  }
+
+
+}
+@media screen and (max-width: 768px ) {
+  nav a{
+    display: none;
+  }
+
+  .rev {
+    size: .5rem;
+  }
+  .rev form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .rev form > * {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  EM {
+    width: 50%;
+  }
+
+  EM h1 {
+    font-size: 15pt;
+    display: block;
+    align-items: center;
+  }
+
+
+  
+  EM > * {
+    width: 50px;
+    display: flex;
+
   }
 
 
