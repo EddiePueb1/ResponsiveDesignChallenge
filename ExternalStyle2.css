@@ -24,7 +24,7 @@ A:link {color: gray}
 }
 .nav-links a:hover {
   text-decoration: overline; 
-  color: teal
+  color: white
 }
 .nav-links .active {
   color: green;
@@ -113,10 +113,13 @@ Form {
   .icon {
     display: inline;
     position: absolute;
-    top:0;
-    right: 0;
+    top: 0;
+    right:0;
+    cursor: pointer;
     padding: 15px;
     background-color: black;
+    visibility: visible;
+    transition: 0.4s ease;
   }
 
   .top-nav {
@@ -124,30 +127,70 @@ Form {
     width: 100%;
     display: flex;
     justify-content: center;
+    visibility: hidden;
     
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     padding: 2rem;
-    
+    transition: 0.4s ease-in-out;
 
   }
-
-
-
   
+  .nav-links a{
+    text-decoration: none;
+  }
 
+  .nav-links a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .nav-links .active {
+    color: lightgray;
+    text-decoration: none;
+    background-color: green;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+    transition: .4s ease;
+  }
+
+  center {
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+
+  H4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    transform: scale(1.2);
+    transition: 0.4s ease;
+  }
+
+  .res {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.4s ease;
+  }
   .rev {
     size: .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;;
+
   }
   .rev form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
+    justify-content: flex-end;
+    width:70%;
   }
 
   .rev form > * {

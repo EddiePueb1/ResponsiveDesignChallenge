@@ -2,10 +2,13 @@ const toggle = () => {
   var x = document.getElementById("links");
   if (x.style.display === "none") {
     x.style.display = "flex";
+    x.style.visibility = "visible";
 
   } else {
     x.style.display = "none";
   }
+
+ 
 
   console.log(x.style.display);
 }
