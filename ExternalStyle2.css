@@ -4,7 +4,11 @@ A:visited, A:active {color: green} */
 A:hover {text-decoration: overline; color: teal}
 	
 
-nav {
+.icon {
+  display: none;
+
+}
+.nav-links {
   display: flex;
   justify-content: flex-end;
 }
@@ -44,11 +48,10 @@ Form {
 	background-color: green}
 
 @media screen and (max-width:480px ) {
+
+  
   center img {
     width: 20%;
-  }
-  nav a{
-    font-size: .5rem;
   }
 
   .rev {
@@ -91,9 +94,73 @@ Form {
 
 }
 @media screen and (max-width: 768px ) {
-  nav a{
-    display: none;
+  
+  .icon {
+    display: inline;
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 15px;
+    background-color: black;
   }
+
+  .top-nav {
+    background-color: black;
+    width: 100%;
+    
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+    
+
+  }
+
+
+
+  
+
+  .rev {
+    size: .5rem;
+  }
+  .rev form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .rev form > * {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  EM {
+    width: 50%;
+  }
+
+  EM h1 {
+    font-size: 15pt;
+    display: block;
+    align-items: center;
+  }
+
+
+  
+  EM > * {
+    width: 50px;
+    display: flex;
+
+  }
+
+
+}
+@media screen and (max-width: 1200px ) {
+  
+  
 
   .rev {
     size: .5rem;
