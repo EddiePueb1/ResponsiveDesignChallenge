@@ -189,14 +189,19 @@ Form {
   .rev form{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    width:70%;
+    justify-content: center;
+    width:100%;
   }
 
   .rev form > * {
     display: flex;
     justify-content: center;
     width: 50%;
+  }
+
+  .rev input {
+    margin-left:auto;
+    margin-right:auto;
   }
 
   EM {
@@ -226,7 +231,7 @@ Form {
   .rev {
     size: .5rem;
   }
-  .rev form{
+  /* .rev form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,7 +241,7 @@ Form {
   .rev form > * {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 50%; */
   }
 
   EM {
