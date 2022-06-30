@@ -1,21 +1,36 @@
 
 A:link {color: gray}
-A:visited, A:active {color: green} */
-A:hover {text-decoration: overline; color: teal}
+
 	
 
 .icon {
   display: none;
 
 }
+
+.top-nav {
+  /* background-color: black; */
+  position: relative;
+  top: 0;
+}
 .nav-links {
   display: flex;
   justify-content: flex-end;
 }
 
-nav a {
-  margin: 10px;
+.nav-links a {
+  color: grey;
+  padding-left: 20px;
 }
+.nav-links a:hover {
+  text-decoration: overline; 
+  color: teal
+}
+.nav-links .active {
+  color: green;
+  text-decoration: overline; 
+}
+
 
 
 Body {
@@ -107,12 +122,15 @@ Form {
   .top-nav {
     background-color: black;
     width: 100%;
+    display: flex;
+    justify-content: center;
     
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
+    align-items: center;
     padding: 2rem;
     
 
