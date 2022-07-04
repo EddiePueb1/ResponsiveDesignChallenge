@@ -1,14 +1,12 @@
 const toggle = () => {
-  var x = document.getElementById("links");
-  if (x.style.display === "none") {
-    x.style.display = "flex";
-    x.style.visibility = "visible";
-
+  const menu = document.getElementById("links");
+  if (menu.style.display === "none") {
+    menu.style.display = "flex";
   } else {
-    x.style.display = "none";
+    menu.style.display = "none";
   }
+  
+  console.log(menu.style.display);
 
- 
-
-  console.log(x.style.display);
 }
+
