@@ -1,0 +1,65 @@
+A:link {color: gray}
+
+	
+
+.icon {
+  display: none;
+
+}
+
+.top-nav {
+  position: relative;
+  top: 0;
+  left: auto;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: grey;
+  padding-left: 20px;
+}
+.nav-links a:hover {
+  text-decoration: overline; 
+  color: white
+}
+.nav-links .active {
+  color: green;
+  text-decoration: overline; 
+}
+
+
+Body {
+	background-color: #E4E3E3;
+	font-family: cambria;
+	color: gray	
+	}
+
+H1 {font-size: 50pt; text-align: right}
+H2 {font-size: 25pt; text-align: center}
+H3 {font-size: 10pt; text-align: center}
+H4 {text-align: center}
+H5 {font-size: 15pt}
+
+P {font-size: 10pt; font-family: monospace}
+
+Table {
+	width: 400px; 
+	font-family: monospace; 
+	color: white; 
+	background-color: green;
+	margin: .8em;
+	border-color: darkgreen}
+
+
+Form {
+	font-family: monospace; 
+	text-align: center; 
+	color: white; 
+	background-color: green}
+
+@media and (min-width: 480px) {
+
+}
