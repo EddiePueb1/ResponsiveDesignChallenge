@@ -60,6 +60,31 @@ Form {
 	color: white; 
 	background-color: green}
 
-@media and (min-width: 480px) {
+@media screen and (max-width: 560px) and (min-width: 0px) {
+  center img {
+    transform: scale(0.7);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    display: flex;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 1200px) and (min-width) {
+  
 }
